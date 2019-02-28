@@ -11,6 +11,12 @@ a {
 	text-decoration: none;
 }
 
+.q-actions {
+    display: block;
+    margin: 20px 0;
+    height: auto;
+}
+
 #navigation {
 	z-index: 1;
 	background: #00cea0;
