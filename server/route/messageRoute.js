@@ -11,4 +11,9 @@ router.post(
 	MessageController.sendMessage,
 );
 
+router.get(
+	'/api/v1/messages/sent',
+	MessageController.getSentMessages,
+);
+
 export default router;
