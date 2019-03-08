@@ -11,4 +11,12 @@ router.post(
 	UserController.registerUser,
 );
 
+router.post(
+	'/api/v1/auth/login',
+	validateUser.validateUserLoginData,
+	validateUser.validateLogin,
+	UserController.loginUser,
+);
+
+
 export default router;
