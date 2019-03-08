@@ -1,0 +1,39 @@
+{
+  "name": "epic-mail",
+  "version": "1.0.0",
+  "description": "Epic Mail App",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./server/app.js --exec babel-node --presets babel-preset-env ",
+    "test": "nyc mocha ./server/test --require babel-register --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gfreedoms/Epic-Mail.git"
+  },
+  "author": "Gemmar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gfreedoms/Epic-Mail/issues"
+  },
+  "homepage": "https://github.com/Gfreedoms/Epic-Mail#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "express": "^4.16.4",
+    "joi": "^14.3.1",
+    "mocha": "^6.0.0",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nyc": "^13.3.0"
+  }
+}
