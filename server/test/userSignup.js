@@ -37,7 +37,7 @@ describe('Post api/v1/auth/signup', () => {
 				isAdmin: 'true',
 			})
 			.end((err, res) => {
-				assert.equal(res.body.error, 'BadRequest: firstname cannot be empty');
+				assert.equal(res.body.error, 'BadRequest: "firstname" is not allowed to be empty');
 				assert.equal(res.status, 400);
 				done(err);
 			});
