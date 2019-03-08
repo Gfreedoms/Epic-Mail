@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { describe, it } from 'mocha';
 import { use, request, assert } from 'chai';
 import chaihttp from 'chai-http';
