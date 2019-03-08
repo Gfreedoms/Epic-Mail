@@ -3,3 +3,12 @@ node_js:
 - "stable"
 script: npm test
 
+addons:
+    code_climate:
+        repo_token: <8b25f0703cc1c54ca7288ce41462d6f7fd5fdd778358b15812d7d6ec88c70ab1>
+script: istanbul cover node_modules/mocha/bin/_mocha -- -R spec
+before_script:
+  - npm install codeclimate-test-reporter istanbul -g
+after_script:
+  - codeclimate-test-reporter < ./coverage/lcov.info
+
