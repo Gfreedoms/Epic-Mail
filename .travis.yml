@@ -1,21 +1,6 @@
 language: node_js
 node_js:
 - "stable"
-
-addons:
-  code_climate:
-      repo_token:
-        secure: "8b25f0703cc1c54ca7288ce41462d6f7fd5fdd778358b15812d7d6ec88c70ab1" 
-
-
-before_script:
- - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
- - chmod +x ./cc-test-reporter
- - ./cc-test-reporter before-build
-
-after_success: 
- - npm run coveralls
- - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 script: npm test
-script: npm run coverage
+
 
